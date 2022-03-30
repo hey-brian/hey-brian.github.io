@@ -20,7 +20,7 @@
 
 
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://Brian-H-Song.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hey-brian.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 #######################################################################
 # Settings related to the Header and your About page go here,such as 
@@ -31,7 +31,7 @@ url: "https://Brian-H-Song.github.io/" # the base hostname & protocol for your s
 heading: Brian's notes # Change this 
 copyright:  
   year: 2021
-  msg: Brian H. Song # This is a mandatory attribute for copyright to be displayed ; If deleting this, edit at footer layout.
+  msg: hey, brian! # This is a mandatory attribute for copyright to be displayed ; If deleting this, edit at footer layout.
 
 
 #####################################################################
