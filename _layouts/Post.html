@@ -1,4 +1,6 @@
 ---
+layout: base
+comments: true
 ---
 
 <!-------------------------------------------------------------------------------------
@@ -164,7 +166,10 @@
                 <div class="column is-half">
                     {%- include FeedContent.html -%}
                     {%- include Feed.html -%}
-                    {%- include Footer.html -%}             
+                    {%- include Footer.html -%}
+                    {% if page.comments != false %}
+                        {% include disqus_comments.html %}
+                    {% endif %}               
                 </div>
             {%- endif -%}
 
