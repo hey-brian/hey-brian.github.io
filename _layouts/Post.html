@@ -116,6 +116,9 @@ comments: true
                         {%- include Content.html -%}
                         {%- include Backlinks.html -%}
                         </div>
+                        {% if page.comments != false %}
+                            {% include disqus_comments.html %}
+                        {% endif %}
                         {%- include Footer.html -%}
                     </main>
                 </div>
@@ -166,10 +169,7 @@ comments: true
                 <div class="column is-half">
                     {%- include FeedContent.html -%}
                     {%- include Feed.html -%}
-                    {%- include Footer.html -%}
-                    {% if page.comments != false %}
-                        {% include disqus_comments.html %}
-                    {% endif %}               
+                    {%- include Footer.html -%}               
                 </div>
             {%- endif -%}
 
