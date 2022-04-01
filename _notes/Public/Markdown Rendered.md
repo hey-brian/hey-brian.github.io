@@ -1,7 +1,7 @@
 ---
 title : Markdown Rendered
-notetype : feed
-date : 01-02-2021
+notetype : unfeed
+date : 2021-01-02
 ---
  
 This page contains a quick reference to all markdown properties. 90% of this was part of the [Simple Jekyll](https://github.com/raghuveerdotnet/simply-jekyll) theme, which we forked to built this one. Great job, makers!
