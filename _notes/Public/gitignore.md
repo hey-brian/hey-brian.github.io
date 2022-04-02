@@ -15,7 +15,7 @@ git rm -r --cached .
 
 ## 이슈
 추적할 필요가 없는 [.DS_Store](https://en.wikipedia.org/wiki/.DS_Store) 를 제외해보려고 했다.
-	![[Screen Shot 2022-04-01 at 3.39.12 PM.png]]
+	![](attachments/gitignore_1.png)
 이를 제거하려고 .gitignore를 생성하여 저 파일을 대상으로 포함시켰다.
 [gitignore](https://www.toptal.com/developers/gitignore)
 
@@ -33,7 +33,7 @@ git rm -r --cached .
 	```shell
 	git status
 	```
-![[Screen Shot 2022-04-01 at 3.51.41 PM.png]]
+![](attachments/gitignore_2.png)
 5. 다시 아래 명령어를 입력해서 stage에 파일을 올리고 commit한다.
 	``` shell
 	git add .
