@@ -1,8 +1,12 @@
 _site
 .jekyll-cache
-pages/.DS_Store
-pages/tags.md
-_notes/.obsidian
+tags.md
+.obsidian
+Docker*
+docker*
+debug*
+*code-workspace
+Gemfile*
 
 # General
 .DS_Store
