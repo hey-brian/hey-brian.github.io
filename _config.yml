@@ -30,7 +30,7 @@ url: "https://hey-brian.github.io/" # the base hostname & protocol for your site
 
 heading: Brian's notes # Change this 
 copyright:  
-  year: 2021
+  year: 2022
   msg: hey, brian! # This is a mandatory attribute for copyright to be displayed ; If deleting this, edit at footer layout.
 
 
