@@ -1,6 +1,6 @@
 ---
 title: gitignore 작성했는데 적용 안 될때 (왜 ignore 안 되는 것인가..)
-notetype : show
+feed: show
 date : 2022-04-01
 tags : [ programming/git, 📝️/🌲️ ]
 comments: true
