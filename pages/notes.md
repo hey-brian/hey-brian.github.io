@@ -2,7 +2,10 @@
 layout: Post
 permalink: /notes
 feedformat: card
-title: Digital Garden
+title: Welcome to the Brian's notes
 ---
-
-The feed page shows all notes from `notes` folder. If you want to hide any notes from this feed, add `feed:hide` on note's Frontmatter. Eg:[[Hidden Note]]
+    
+Belows are my notes and a feed of notes arranged based on the latest date. </br>
+I wrote all of notes and I should confess that those are not always valid and true. </br>
+You cannot reproduce my notes or deliver them to other sites. </br>
+I know you wouldn't. Just check my notes for fun and find more reliable contents outside. </br>
