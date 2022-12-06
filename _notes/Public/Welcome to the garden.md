@@ -8,4 +8,4 @@ Welcome to digital garden using Obsidian and Jekyll garden theme. This file is l
 
 Check [[Hidden Note]] to know how to create notes which won't appear on the feed!
 
-[[20220412_stove league_휴먼승수체]]
+[[스토브리그-휴먼승수체 모음]]
