@@ -1,6 +1,6 @@
 ---
 title: Pinned feeds
-feed: show
+feed: hide
 date: 2022-12-06
 permalink: /pinned
 format: list
