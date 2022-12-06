@@ -1,10 +1,12 @@
 ---
 title: template
-notetype : unfeed
+feed: show
 date : {{date}}
+time : {{time:HH:mm:ss}}
 tags : []
 permalink: /credits
 format: list
+comments: true
 ---
 
 1. `Title` is the page title. It **should be same as that of your Obsidian file** title for our Wiki links to work. i.e, if file is `credits.md` title has to be `credits`

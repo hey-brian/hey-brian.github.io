@@ -41,7 +41,8 @@ layout: Stylesheet
 }
 
 .serif {
-    font-family: Georgia, serif !important;
+    font-family: 'Gowun Dodum', serif !important;
+/*    font-family: Georgia, serif !important;*/
 }
 
 .title-sans {
