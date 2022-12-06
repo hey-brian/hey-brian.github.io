@@ -49,4 +49,6 @@ comments: true
 
 ![](/attachments/45e620220412.png)
 
+[[Pinned]]
+
 _끝_

@@ -1,10 +1,10 @@
 ---
 title: Pinned feeds
-feed: hide
+feed: show
 date: 2022-12-06
 permalink: /pinned
 ---
 
-### Pinned feeds
+### 좋아하는 피드들
 --- 
 1. [[20220412_stove league_휴먼승수체]]
