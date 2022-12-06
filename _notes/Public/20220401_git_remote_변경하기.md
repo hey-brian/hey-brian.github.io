@@ -2,7 +2,7 @@
 title: local에 연결된 git remote 백업, 변경하기
 feed: show
 date : 2022-04-01
-tags : [ programming/git, 📝️/🌲️ ]
+tags : [ git, 📝️/🌲️ ]
 comments: true
 ---
 

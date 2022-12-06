@@ -41,4 +41,7 @@ git rm -r --cached .
 	git commit -m "reset cache and fix tracking issue" 
 	```
 
+## Summary
+> git 캐쉬가 남아서 뭔가 이상하면, git rm -r --cached .
+
 _끝_
