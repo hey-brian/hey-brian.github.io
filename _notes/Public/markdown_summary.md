@@ -1,5 +1,5 @@
 ---
-title : markdown summary
+title : markdown_summary
 feed: hide
 date : 2021-01-02
 permalink: /smtm
@@ -15,7 +15,7 @@ _이렇게._ 언더바를 막아주면 이탤릭 없어지고.. 영어 키보드
 This page contains a quick reference to all markdown properties. 90% of this was part of the [Simple Jekyll](https://github.com/raghuveerdotnet/simply-jekyll) theme, which we forked to built this one. Great job, makers!
 
 By the way, how did you reach this page?  
-From backlink under [[Hidden Note] or from feed, along with [[Welcome to the garden]]?
+From backlink under [[Hidden Note]] or from feed, along with [[Welcome to the garden]]?
 
 * TOC
 {:toc}
@@ -400,3 +400,4 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 
 License: CC-BY
+

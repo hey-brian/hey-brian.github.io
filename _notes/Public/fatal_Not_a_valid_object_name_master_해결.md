@@ -1,5 +1,5 @@
 ---
-title: "git branch 생성할 때 fatal: Not a valid object name: 'master'. 해결방법"
+title: fatal_Not_a_valid_object_name_master_해결
 feed: show
 date : 2022-12-06
 time : 09:41:10
@@ -26,5 +26,6 @@ $ git commit -m "initial commit"
 
 #### Summary
 >branch를 만들기 위해서는 initial commit 필요!!
+
 
 _끝_
