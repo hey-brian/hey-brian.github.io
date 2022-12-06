@@ -1,5 +1,5 @@
 ---
-title: fatal_Not_a_valid_object_name_master_해결
+title: Not_a_valid_object_name_master_해결
 feed: show
 date : 2022-12-06
 time : 09:41:10
@@ -19,7 +19,7 @@ git branch develop
 #### 해결방법
 - 최초 commit을 진행하여 master를 생성한다.
 ``` Shell
-$ git commit -m "initial commit"
+git commit -m "initial commit"
 ```
 
 이후에 branch를 생성하면 에러 없이 원하는 branch를 생성할 수 있다.
