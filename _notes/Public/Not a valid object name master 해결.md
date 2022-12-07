@@ -1,11 +1,12 @@
 ---
-title: Not_a_valid_object_name_master_해결
+title: Not a valid object name master 해결
 feed: show
 date : 2022-12-06
 time : 09:41:10
 tags : [📝️/🌲️]
 comments: true
 ---
+# Git에서 branch 생성시 에러 발생..
 
 git에서 branch를 아래와 같이 생성하려고 할 때, 제목과 같은 에러가 발생하는 경우가 있다.
 ``` shell

@@ -1,11 +1,11 @@
 ---
-title: gitignore_작성했는데_적용_안_될때
+title: gitignore 작성했는데 적용 안 될때
 feed: show
 date : 2022-04-01
 tags : [ programming/git, 📝️/🌲️ ]
 comments: true
 ---
-_(왜 ignore 안 되는 것인가..)_
+# (왜 ignore 안 되는 것인가..)
 
 작업을 하다보면, OS나 Language 특성으로 자동 생성되는 파일이 있다.
 그리고 이런 파일들은 보통 git으로 추적할 필요가 없는데, 이를 설정해주는 파일이 `.gitignore` 이다.

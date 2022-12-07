@@ -1,5 +1,5 @@
 ---
-title: git_remote_변경하기
+title: git remote 변경하기
 feed: show
 date : 2022-04-01
 tags : [ git, 📝️/🌲️ ]

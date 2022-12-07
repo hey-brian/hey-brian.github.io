@@ -1,5 +1,5 @@
 ---
-title : markdown_summary
+title : markdown summary
 feed: hide
 date : 2021-01-02
 permalink: /smtm
