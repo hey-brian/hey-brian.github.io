@@ -1,5 +1,5 @@
 ---
-title: template
+title: 
 feed: show
 date : {{date}}
 time : {{time:HH:mm:ss}}
