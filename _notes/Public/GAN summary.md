@@ -13,7 +13,7 @@ comments: true
 ### 2.1 discriminative models
 - supervised classification, regression에 사용되는 모델: NN, logistic regression, SVM, etc.
 - 정해진 개수의 label로 구성된 labeled data를 사용
-- training data에서 label을 나누는 경계(boundaries, P(y|x))를 학습하고, 그 경계를 사용하여 예측 수행
+- training data에서 label을 나누는 경계(boundaries, P(y\|x))를 학습하고, 그 경계를 사용하여 예측 수행
 
 ### 2.2 generative models
 - unsupervised learning model: Boltzmann machines, Variational AutoEncoder, HMM, GPT-2, etc.
