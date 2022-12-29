@@ -3234,7 +3234,7 @@ a.navbar-item,
       margin-left: 41.66667%; }
     .column.is-6-desktop {
       flex: none;
-      width: 50%; }
+      width: 80%; }
     .column.is-offset-6-desktop {
       margin-left: 50%; }
     .column.is-7-desktop {
@@ -3345,24 +3345,24 @@ a.navbar-item,
       margin-left: 33.33333%; }
     .column.is-5-widescreen {
       flex: none;
-      width: 41.66667%; }
+      width: 75%; } /*41.66667*/
     .column.is-offset-5-widescreen {
-      margin-left: 41.66667%; }
+      margin-left: 75%; } 
     .column.is-6-widescreen {
       flex: none;
-      width: 50%; }
+      width: 75%; } /*50*/
     .column.is-offset-6-widescreen {
-      margin-left: 50%; }
+      margin-left: 75%; }
     .column.is-7-widescreen {
       flex: none;
-      width: 58.33333%; }
+      width: 75%; } /*58.33333*/
     .column.is-offset-7-widescreen {
-      margin-left: 58.33333%; }
+      margin-left: 75%; }
     .column.is-8-widescreen {
       flex: none;
-      width: 66.66667%; }
+      width: 75%; } /*66.66667*/
     .column.is-offset-8-widescreen {
-      margin-left: 66.66667%; }
+      margin-left: 75%; }
     .column.is-9-widescreen {
       flex: none;
       width: 75%; }
