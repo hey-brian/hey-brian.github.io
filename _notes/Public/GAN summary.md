@@ -23,7 +23,7 @@ comments: true
 
 # 3. GAN (Generative Adversarial Networks)
 - 데이터의 분포를 모방하여 데이터를 생성할 수 있는 Machine Learning 알고리즘
-- 알고리즘을 구성하는 두 축(generator, discriminator)이 서로 경정하며 
+- 알고리즘을 구성하는 두 축(generator, discriminator)이 서로 경쟁하며 알고리즘이 학습됨. 
 - 2014년 [NeurIPS paper](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)를 통해 발표 (저자: Ian Goodfellow 외)
   ###### \=\+\= image from [google developers](https://developers.google.com/machine-learning/gan/gan_structure)![](/attachments/Screenshot_2022-12-29_at_81037_AM_watermarked.png)
 - 구조
@@ -49,9 +49,9 @@ comments: true
 			- 출력: classifiaction result = 진짜 데이터로 오판할(label: 1) 확률
 			  ###### \=\+\= image by author![](/attachments/Screenshot_2022-12-29_at_80338_AM_watermarked.png)
 		* G가 D를 속일 수 있을 정도로 훌륭하다면, D는 1에 가까운 값을 출력한다.
-	+ D와 G 학습 결과
-		* 학습이 진행될 수록(D와 G의 parameters가 update될수록), G는 진짜 데이터와 거의 비슷한 가짜 데이터를 생성하게 된다.
-		* 그 결과, D는 진짜 데이터와 G가 생성한 가짜 데이터를 거의 구별하지 못 하게 된다.
+	+ *D와 G 학습 결과*
+		* **학습이 진행될 수록(D와 G의 parameters가 update될수록), G는 진짜 데이터와 거의 비슷한 가짜 데이터를 생성하게 된다.**
+		* **그 결과, D는 진짜 데이터와 G가 생성한 가짜 데이터를 거의 구별하지 못 하게 된다.**
 
 
 _끝_
