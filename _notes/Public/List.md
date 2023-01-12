@@ -5,25 +5,25 @@ date: 2022-12-06
 permalink: /list
 ---
 
-# Mathematics and Statistics
+## Mathematics
 --- 
 - 
 
-# Analytics and Modeling
+## Modeling
 --- 
 - 
 
-# Machine Learning
+## Machine Learning
 ---
 - [[GAN summary]]
 
-# Programming
-## Python
+## Programming
+### Python
 ---
 - [[pandas(판다스) 쿼리(query) 조회]]
 
-## Visualization
+### Visualization
 
-# ETC
+## ETC
 --- 
 - [[iphone url scheme 정리]]
