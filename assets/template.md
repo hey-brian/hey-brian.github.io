@@ -1,16 +1,27 @@
 ---
-title: 
+title: ooo
 feed: show
-date : {{date}}
-time : {{time:HH:mm:ss}}
+date : 2022-12-22
+time : 08:30:16
 tags : []
 permalink: /credits
 format: list
 comments: true
 ---
 
-1. `Title` is the page title. It **should be same as that of your Obsidian file** title for our Wiki links to work. i.e, if file is `credits.md` title has to be `credits`
-2. If you want to show the note on the feed, you should set `Feed` as `show`. It's an optional value, and the default value is set to hide. (To avoid publishing by mistake)
-3. `date` is used to sort note in feed. 
-4. `permalink` is an optional value. Use it to set permanent URLs
-5. `format:list` will change the layout to a list with border, Refer [[Credits]]. This is useful for Curated lists (Check [my personal library](https://hiran.in/list/reading) ) or while building MoC. 
+## meta데이터
+- 위의 형식으로 작성할 것
+- 제목과 title은 항상 같아야 함. (템플릿 상 ooo)
+
+## 이미지 삽입 관련
+``` shell
+![](/attachments/12320220412.png)
+# 1. 이미지 파일명에는 공백사용 불가 (_ 로 일괄 변경하기)
+# 2. 이미지는 /attachments/ 에 저장
+# 3. 이미지는 위와 같이 링크
+```
+
+## md 스타일 관련
+- 문단 제목과 문단 내용은 # 개수 2개이상 차이나야할 듯.
+
+_끝_

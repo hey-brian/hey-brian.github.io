@@ -25,7 +25,8 @@ comments: true
 - 데이터의 분포를 모방하여 데이터를 생성할 수 있는 Machine Learning 알고리즘
 - 알고리즘을 구성하는 두 축(generator, discriminator)이 서로 경쟁하며 알고리즘이 학습됨. 
 - 2014년 [NeurIPS paper](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)를 통해 발표 (저자: Ian Goodfellow 외)
-- \=\-\= image from [google developers](https://developers.google.com/machine-learning/gan/gan_structure)![](/attachments/Screenshot_2022-12-29_at_81037_AM_watermarked.png)
+	![](/attachments/Screenshot_2022-12-29_at_81037_AM_watermarked.png)
+	- \=\-\= image from [google developers](https://developers.google.com/machine-learning/gan/gan_structure)
 - 구조
 	+ Generator: (discriminator가 속을 수 있을만한) 가짜 데이터를 생성하기 위해 학습 (GAN 명칭에서 Generative)
 		* 다양한 알고리즘 선택 가능: input dimension=latent space dimension, output dimension=real data dimension인 다양한 알고리즘(MLP, CNN, etc) 사용가능
@@ -39,7 +40,8 @@ comments: true
 		* 입력: 진짜 데이터와 가짜 데이터가 random하게 입력
 		* 출력: 진짜 데이터(label:1) vs. 가짜 데이터(label:0)
 		* Unlabeld data를 사용하는 unsupervised learning이지만, 진짜 데이터와 가짜 데이터를 구분하는 과정은 supervised learning처럼 보인다.
-		* \=\-\= image by author ![](/attachments/Screenshot_2022-12-29_at_80330_AM_watermarked.png)
+		![](/attachments/Screenshot_2022-12-29_at_80330_AM_watermarked.png)
+		* \=\-\= image by author 
 		* 논문에서는 D 성능을 높이는데 더 집중
 			- D의 parameters가 다회 update될 때, G의 parameters는 한 번 update된다.
 			- D의 parameters가 update 완료된 이후, G를 학습하여 parameters를 update한다.
@@ -47,7 +49,8 @@ comments: true
 		* 전체적으로 보면, G를 학습할 때의 GAN도 단순한 classification 구조로 볼 수 있다.
 			- 입력: random data w/ label 1 (generated sample labels을 1로 고정) 
 			- 출력: classifiaction result = 진짜 데이터로 오판할(label: 1) 확률
-			- \=\-\= image by author![](/attachments/Screenshot_2022-12-29_at_80338_AM_watermarked.png)
+			![](/attachments/Screenshot_2022-12-29_at_80338_AM_watermarked.png)
+			- \=\-\= image by author
 		* G가 D를 속일 수 있을 정도로 훌륭하다면, D는 1에 가까운 값을 출력한다.
 	+ *D와 G 학습 결과*
 		* **학습이 진행될 수록(D와 G의 parameters가 update될수록), G는 진짜 데이터와 거의 비슷한 가짜 데이터를 생성하게 된다.**
