@@ -35,8 +35,12 @@ os.chdir('spatialindex-src-1.8.5')
 #### Format
 - 입력인자: lat, lng, datetime
 - optional: uid(user id), tid(trajectory id)
-	![](/attachments/Pasted_image_20230306084333.png)
-	- \=\-\= image by author
+- 
+
+![](/attachments/Pasted_image_20230306084333.png)
+
+(\=\-\= image by author)
+
 
 #### Created from
 - skmob.TrajDataFrame.from_file()
@@ -62,12 +66,15 @@ skmob.read('./tdf.json')
 tdf.plot_trajectory()
 ```
 ![](/attachments/Pasted_image_20230306084521.jpeg)
-- \=\-\= image by author 
+
+(\=\-\= image by author)
 
 ## Tessellation
 #### Format
 ![](/attachments/Pasted_image_20230306084716.jpeg)
-- \=\-\= image by author 
+
+(\=\-\= image by author)
+
 - Tessellation: tile_id, geometry 등 (geopandas)
 ``` python
 tessellation = gpd.GeoDataFrame.from_file('~.geojson')
@@ -84,14 +91,16 @@ tdf 샘플
 a_tdf = tdf[tdf['uid']==1]
 ``` 
 ![](/attachments/Pasted_image_20230306091231.png)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 a_tdf.plot_trajectory(zoom=12, weight=3, opacity=0.9,
 					  tiles='Stamen Toner', start_end_markers=True)
 ``` 
 ![](/attachments/Pasted_image_20230306091323.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 # tdf contains trajectories from GeoLife
@@ -99,14 +108,16 @@ a_gdf = a_tdf.to_geodataframe()
 a_gdf.head()
 ```
 ![](/attachments/Pasted_image_20230306091411.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 a_tessellation = tilers.tiler.get("squared", base_shape=a_gdf, meters=100000)
 # NOTE: It accepts also geodataframe with list of polygons
 ``` 
 ![](/attachments/Pasted_image_20230306091518.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 map_f = plot.plot_gdf(a_tessellation, zoom=11,
@@ -114,7 +125,8 @@ map_f = plot.plot_gdf(a_tessellation, zoom=11,
 a_tdf.plot_trajectory(map_f=map_f, start_end_markers=False, hex_color='red')
 ```
 ![](/attachments/Pasted_image_20230306091614.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 #### TrajDataFrame을 Tessellation에 매핑
 ``` python
@@ -122,7 +134,8 @@ mapped_a_tdf = a_tdf.mapping(a_tessellation)
 # a_tdf가 있는데 이걸 a_tessellation 어느 tile에 매핑되는지?
 ```
 ![](/attachments/Pasted_image_20230306091810.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 #### Select points within a tessellation
 ``` python
@@ -134,7 +147,8 @@ map_f = plot.plot_gdf(haidian_tess, zoom=11, popup_features=['tile_ID'],
 tdf.plot_trajectory(map_f=map_f, hex_color='blue')
 ```
 ![](/attachments/Pasted_image_20230306100742.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 #$% tdf를 tessellation에 매핑하여 결과 tdf(mapped_tdf)를 만든다.
@@ -146,19 +160,22 @@ map_f = plot.plot_gdf(haidian_tess, zoom=11, popup_features=['tile_ID'],
 mapped_tdf.plot_trajectory(map_f=map_f, start_end_markers=False)
 ```
 ![](/attachments/Pasted_image_20230306101836.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ```python
 fdf = tdf.to_flowdataframe(tessellation=haidian_tess, self_loops=True)
 ```
 ![](/attachments/Pasted_image_20230306113431.png)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 fdf.plot_flows(flow_exp=0., zoom=11)
 ```
 ![](/attachments/Pasted_image_20230306113448.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 map_f = plot.plot_gdf(haidian_tess, zoom=11, popup_features=['tile_ID'], 
@@ -167,14 +184,18 @@ mapped_tdf.plot_trajectory(map_f=map_f, start_end_markers=False)
 fdf.plot_flows(map_f=map_f, flow_exp=0., zoom=11)
 ```
 ![](/attachments/Pasted_image_20230306113704.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ## FlowDataFrame
 #### Format
 - 입력인자: origin, destination, flow(# of data)
 - optional: datetime
+- 
+
 ![](/attachments/Pasted_image_20230306084611.png)
-- \=\-\= image by author
+
+(\=\-\= image by author)	
 
 #### Created from
 - skmob.TrajDataFrame.from_file()
@@ -186,13 +207,15 @@ fdf.plot_flows(map_f=map_f, flow_exp=0., zoom=11)
 fdf.plot_tessellation(popup_features = ['tile_id', 'population'])
 ```
 ![](/attachments/Pasted_image_20230306085124.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 fdf.plot_flows(flow_color='green')
 ```
 ![](/attachments/Pasted_image_20230306085201.png)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 tess_style = {'color':'gray', 'fillColor':'gray', 'opacity':0.2}
@@ -200,7 +223,8 @@ map_f = fdf.plot_tessellation(style_func_args=tess_style) # plotting tessellatio
 fdf[fdf['origin'] == '36061'].plot_flows(map_f=map_f, flow_exp=0., flow_popup=True) # plotting flow
 ```
 ![](/attachments/Pasted_image_20230306085314.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 # Processing mobility data 
 ## Mobility data processing
@@ -211,9 +235,11 @@ max_speed_kmh = 500.
 user1_f_tdf = filtering.filter(user1_tdf, max_speed_kmh=max_speed_kmh)
 ```
 - tdf: "lat, lng, datetime"
-- 적용 후 parameter (dictionary)에 filter 내역 기록됨.
+- 적용 후 parameter (dictionary)에 filter 내역 기록됨. 
+- 
 ![](/attachments/Pasted_image_20230306154126.png)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 # indicator adds column _merge
@@ -228,7 +254,8 @@ map_f = unfiltered_tdf.plot_trajectory(zoom=14, weight=10, opacity=0.5, hex_colo
 filtered_tdf.plot_trajectory(map_f=map_f, hex_color='red')
 ```
 ![](/attachments/Pasted_image_20230306155528.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 #### 2) compress
 ``` python
@@ -237,15 +264,17 @@ from skmob.preprocessing import compression
 #$% spatial_radius_km=0.1 kilometers 안에 있는 gps 좌표들을 모두 merging!
 skmob.preprocessing.compression(tdf, spatial_radius_km=0.1)
 ```
-- 적용 후 parameter (dictionary)에 filter 내역 기록됨.
-	![](/attachments/Pasted_image_20230306160404.png)
-	- \=\-\= image by author
-- 압축률을 확인해보면, 비슷한 좌표에서 측정된 GPS 좌표가 많았다는 것을 확인할 수 있다.
-	![](/attachments/Pasted_image_20230306160537.jpeg)
-	- \=\-\= image by author
-- 원본 데이터와 다르게 gps 좌표들이 제거되어 경로가 일부 변경된 것을 확인할 수 있다.
-	![](/attachments/Pasted_image_20230306160948.jpeg)
-	- \=\-\= image by author
+- 적용 후 parameter (dictionary)에 filter 내역 기록됨. (\=\-\= image by author)
+- 
+![](/attachments/Pasted_image_20230306160404.png)
+
+- 압축률을 확인해보면, 비슷한 좌표에서 측정된 GPS 좌표가 많았다는 것을 확인할 수 있다. (\=\-\= image by author)
+- 
+![](/attachments/Pasted_image_20230306160537.jpeg)
+
+- 원본 데이터와 다르게 gps 좌표들이 제거되어 경로가 일부 변경된 것을 확인할 수 있다. (\=\-\= image by author)
+- 
+![](/attachments/Pasted_image_20230306160948.jpeg)
 
 #### stop detection
 ``` python
@@ -253,12 +282,12 @@ user1_scf_tdf = detection.stay_locations(user1_cf_tdf, minutes_for_a_stop=20.0,
 																patial_radius_km=0.2, leaving_time=True)
 user1_scf_tdf.head()
 ```
-- 최소 minutes for a stop 이상, spatial radius km * stop radius factor 내 머물러 있을 경우 stop이라고 인식 
-	![](/attachments/Pasted_image_20230306161610.jpeg)
-	- \=\-\= image by author
-- 적용 후 parameter (dictionary)에 filter 내역 기록됨.
-	![](/attachments/Pasted_image_20230306161843.png)
-	- \=\-\= image by author 
+- 최소 minutes for a stop 이상, spatial radius km * stop radius factor 내 머물러 있을 경우 stop이라고 인식 (\=\-\= image by author)
+- 
+![](/attachments/Pasted_image_20230306161610.jpeg)
+ - 적용 후 parameter (dictionary)에 filter 내역 기록됨. (\=\-\= image by author)
+ - 
+![](/attachments/Pasted_image_20230306161843.png)
 
 #### Visualise the compressed trajectory and the stops
 - stops를 시각화하면 기본적으로 아래의 attributes를 확인할 수 있다.
@@ -271,7 +300,8 @@ map_f = user1_scf_tdf.plot_trajectory(max_points=1000, hex_color='blue', start_e
 user1_scf_tdf.plot_stops(map_f=map_f, hex_color='red')
 ``` 
 ![](/attachments/Pasted_image_20230306163454.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 #### Stops define trips
 ``` python
@@ -286,7 +316,8 @@ user1_tid1_map = user1_tid1_tdf.plot_trajectory(zoom=12, weight=5, opacity=0.9,
 												hex_color='red', tiles='Stamen Toner', )
 ```
 ![](/attachments/Pasted_image_20230306163746.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ``` python
 from skmob.utils.gislib import getDistanceByHaversine
@@ -308,21 +339,23 @@ distance_straight_line(user1_tid1_tdf)
 
 #### Find clusters of stops
 - 비슷한 stops 위치를 DBSCAN clustering을 하고, cluster ID의 숫자가 낮을수록 더 자주 방문한 곳(stops)이다.
+- user1_scf_tdf으로 계산된 stops에 대해 clustering을 적용하는 것이기 때문에, user1_clscf_tdf 데이터의 개수는 user1_scf_tdf와 동일하다.
 ``` python
 from skmob.preprocessing import clustering
 user1_clscf_tdf = clustering.cluster(user1_scf_tdf, cluster_radius_km=0.1, min_samples=1)
 user1_clscf_tdf.head()
 ```
-- user1_scf_tdf으로 계산된 stops에 대해 clustering을 적용하는 것이기 때문에, user1_clscf_tdf 데이터의 개수는 user1_scf_tdf와 동일하다.
-	- user1_clscf_tdf
-		![](/attachments/Pasted_image_20230306161610.jpeg)
-		- \=\-\= image by author
-	- user1_clscf_tdf 
-		![](/attachments/Pasted_image_20230307134757.jpeg)
-		- \=\-\= image by author 
-- parameters
-	![](/attachments/Pasted_image_20230307135259.png)
-	- \=\-\= image by author
+- user1_clscf_tdf (\=\-\= image by author)
+
+![](/attachments/Pasted_image_20230306161610.jpeg)
+
+- user1_clscf_tdf (\=\-\= image by author)
+
+![](/attachments/Pasted_image_20230307134757.jpeg)
+
+- parameters (\=\-\= image by author)
+
+![](/attachments/Pasted_image_20230307135259.png)
 
 #### Visualise clustered stops  
 ``` python
@@ -331,7 +364,8 @@ map_f = user1_cf_tdf.plot_trajectory(max_points=1000, hex_color='blue',
 user1_clscf_tdf.sort_values('cluster').query("cluster < 5").plot_stops(map_f=map_f)
 ```
 ![](/attachments/Pasted_image_20230307135740.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 ## examples
 ``` python
@@ -347,6 +381,7 @@ map_f = map_filtered_tdf.plot_trajectory(map_f=map_f, max_points=None, weight=5,
 map_compressed_tdf.plot_trajectory(map_f=map_f, max_points=None, hex_color='red')
 ```
 ![](/attachments/Pasted_image_20230307144702.jpeg)
-- \=\-\= image by author
+
+(\=\-\= image by author)
 
 _끝_
