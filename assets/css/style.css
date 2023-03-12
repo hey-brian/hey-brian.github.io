@@ -130,7 +130,8 @@ p {
 }
 
 code {
-    font-size: var(--text-m);
+    font-size: 0.8em;
+    /* original: font-size: var(--text-m); */
     font-weight: var(--text-leading-normal);
     padding: 0.25em 0.5em 0.25em;
 }
@@ -392,7 +393,8 @@ pre code {
     word-wrap: break-word !important;
     padding: 15px 15px 15px 15px;
     vertical-align: middle;
-    font-size: 1em;
+    font-size: 0.8em;
+    /* original: 1em */
 
 }
 
