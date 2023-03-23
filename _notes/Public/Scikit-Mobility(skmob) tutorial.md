@@ -95,8 +95,12 @@ a_tdf = tdf[tdf['uid']==1]
 (\=\-\= image by author)
 
 ``` python
-a_tdf.plot_trajectory(zoom=12, weight=3, opacity=0.9,
-					  tiles='Stamen Toner', start_end_markers=True)
+a_tdf.plot_trajectory(
+	zoom=12, 
+	weight=3, 
+	opacity=0.9,
+	tiles='Stamen Toner', 
+	start_end_markers=True)
 ``` 
 ![](/attachments/Pasted_image_20230306091323.jpeg)
 
