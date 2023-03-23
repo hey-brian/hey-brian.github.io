@@ -11,14 +11,21 @@ comments: true
 # 📝Scikit-Mobility ([official github](https://github.com/scikit-mobility/scikit-mobility))
 - GPS 좌표/이동경로 분석용 파이썬 패키지 
 - 설치방법
+
 ``` shell
 # pip 설치
 pip install scikit-mobility
 # conda 설치
 conda install -c conda-forge scikit-mobility
+```
+``` python
 # google colab 사용
 !apt-get install -qq curl g++ make
+```
+``` python
 !curl -L http://download.osgeo.org/libspatialindex/spatialindex-src-1.8.5.tar.gz | tar xz
+```
+``` python
 import os
 os.chdir('spatialindex-src-1.8.5')
 !./configure
@@ -77,7 +84,9 @@ tdf.plot_trajectory()
 
 - Tessellation: tile_id, geometry 등 (geopandas)
 ``` python
-tessellation = gpd.GeoDataFrame.from_file('~.geojson')
+tessellation = \
+	gpd.GeoDataFrame\
+	.from_file('~.geojson')
 ```
 - tile_id
 	- tessellation column 이름
@@ -115,27 +124,35 @@ a_gdf.head()
 
 (\=\-\= image by author)
 
+NOTE: It accepts also geodataframe with list of polygons
 ``` python
-a_tessellation = tilers.tiler.get("squared", base_shape=a_gdf, meters=100000)
-# NOTE: It accepts also geodataframe with list of polygons
+a_tessellation = tilers.tiler.get(
+	"squared", 
+	base_shape=a_gdf, 
+	meters=100000)
 ``` 
 ![](/attachments/Pasted_image_20230306091518.jpeg)
 
 (\=\-\= image by author)
 
 ``` python
-map_f = plot.plot_gdf(a_tessellation, zoom=11,
-					  popup_features=['tile_ID'], style_func_args=tess_style)
-a_tdf.plot_trajectory(map_f=map_f, start_end_markers=False, hex_color='red')
+map_f = plot.plot_gdf(
+	a_tessellation, zoom=11,
+	popup_features=['tile_ID'], 
+	style_func_args=tess_style)
+a_tdf.plot_trajectory(
+	map_f=map_f, 
+	start_end_markers=False, 
+	hex_color='red')
 ```
 ![](/attachments/Pasted_image_20230306091614.jpeg)
 
 (\=\-\= image by author)
 
 #### TrajDataFrame을 Tessellation에 매핑
+a_tdf가 있는데 이걸 a_tessellation 어느 tile에 매핑되는지?
 ``` python
 mapped_a_tdf = a_tdf.mapping(a_tessellation)
-# a_tdf가 있는데 이걸 a_tessellation 어느 tile에 매핑되는지?
 ```
 ![](/attachments/Pasted_image_20230306091810.jpeg)
 
@@ -143,32 +160,48 @@ mapped_a_tdf = a_tdf.mapping(a_tessellation)
 
 #### Select points within a tessellation
 ``` python
-haidian_tess = tilers.tiler.get("squared", base_shape='Haidian, China', meters=1000)
-map_f = plot.plot_gdf(haidian_tess, zoom=11, popup_features=['tile_ID'], 
-											style_func_args=tess_style)
+haidian_tess = tilers.tiler.get(
+	"squared", 
+	base_shape='Haidian, China', 
+	meters=1000)
+map_f = plot.plot_gdf(
+	haidian_tess, 
+	zoom=11, 
+	popup_features=['tile_ID'], 
+	style_func_args=tess_style)
 
 #$% map_f에 tdf를 올린다.
-tdf.plot_trajectory(map_f=map_f, hex_color='blue')
+tdf.plot_trajectory(
+	map_f=map_f, 
+	hex_color='blue')
 ```
 ![](/attachments/Pasted_image_20230306100742.jpeg)
 
 (\=\-\= image by author)
 
-``` python
 #$% tdf를 tessellation에 매핑하여 결과 tdf(mapped_tdf)를 만든다.
-mapped_tdf = tdf.mapping(haidian_tess, remove_na=True) # tessellation에 매핑 안 되는 trajectories는 제외
-map_f = plot.plot_gdf(haidian_tess, zoom=11, popup_features=['tile_ID'], 
-											style_func_args=tess_style)
+``` python
+mapped_tdf = tdf.mapping(
+	haidian_tess, remove_na=True) 
+# 매핑 안 되는 trajectories는 제외
+map_f = plot.plot_gdf(
+	haidian_tess, zoom=11, 
+	popup_features=['tile_ID'], 
+	style_func_args=tess_style)
 
 #$% map_f에 mapped_tdf를 올린다.
-mapped_tdf.plot_trajectory(map_f=map_f, start_end_markers=False)
+mapped_tdf.plot_trajectory(
+	map_f=map_f, 
+	start_end_markers=False)
 ```
 ![](/attachments/Pasted_image_20230306101836.jpeg)
 
 (\=\-\= image by author)
 
 ```python
-fdf = tdf.to_flowdataframe(tessellation=haidian_tess, self_loops=True)
+fdf = tdf.to_flowdataframe(
+	tessellation=haidian_tess, 
+	self_loops=True)
 ```
 ![](/attachments/Pasted_image_20230306113431.png)
 
@@ -182,16 +215,24 @@ fdf.plot_flows(flow_exp=0., zoom=11)
 (\=\-\= image by author)
 
 ``` python
-map_f = plot.plot_gdf(haidian_tess, zoom=11, popup_features=['tile_ID'], 
-					  style_func_args=tess_style)
-mapped_tdf.plot_trajectory(map_f=map_f, start_end_markers=False)
-fdf.plot_flows(map_f=map_f, flow_exp=0., zoom=11)
+map_f = plot.plot_gdf(
+	haidian_tess, 
+	zoom=11, 
+	popup_features=['tile_ID'], 
+	style_func_args=tess_style)
+mapped_tdf.plot_trajectory(
+	map_f=map_f, 
+	start_end_markers=False)
+fdf.plot_flows(
+	map_f=map_f, 
+	flow_exp=0., 
+	zoom=11)
 ```
 ![](/attachments/Pasted_image_20230306113704.jpeg)
 
 (\=\-\= image by author)
 
-## FlowDataFrame
+## FlowDataFrame
 #### Format
 - 입력인자: origin, destination, flow(# of data)
 - optional: datetime
@@ -208,7 +249,10 @@ fdf.plot_flows(map_f=map_f, flow_exp=0., zoom=11)
 
 #### Plotting
 ``` python
-fdf.plot_tessellation(popup_features = ['tile_id', 'population'])
+fdf.plot_tessellation(
+	popup_features = [
+		'tile_id', 
+		'population'])
 ```
 ![](/attachments/Pasted_image_20230306085124.jpeg)
 
@@ -222,21 +266,34 @@ fdf.plot_flows(flow_color='green')
 (\=\-\= image by author)
 
 ``` python
-tess_style = {'color':'gray', 'fillColor':'gray', 'opacity':0.2}
-map_f = fdf.plot_tessellation(style_func_args=tess_style) # plotting tessellation
-fdf[fdf['origin'] == '36061'].plot_flows(map_f=map_f, flow_exp=0., flow_popup=True) # plotting flow
+tess_style = {
+	'color':'gray', 
+	'fillColor':'gray', 
+	'opacity':0.2}
+
+# plotting tessellation
+map_f = fdf.plot_tessellation(
+	style_func_args=tess_style) 
+
+# plotting flow
+fdf[fdf['origin'] == '36061'].plot_flows(
+	map_f=map_f, 
+	flow_exp=0., 
+	flow_popup=True) 
 ```
 ![](/attachments/Pasted_image_20230306085314.jpeg)
 
 (\=\-\= image by author)
 
-# Processing mobility data 
+# Processing mobility data
 ## Mobility data processing
 #### 1) filtering
 ``` python
 from skmob.preprocessing import filtering
 max_speed_kmh = 500.
-user1_f_tdf = filtering.filter(user1_tdf, max_speed_kmh=max_speed_kmh)
+user1_f_tdf = filtering.filter(
+	user1_tdf, 
+	max_speed_kmh=max_speed_kmh)
 ```
 - tdf: "lat, lng, datetime"
 - 적용 후 parameter (dictionary)에 filter 내역 기록됨. 
@@ -247,15 +304,29 @@ user1_f_tdf = filtering.filter(user1_tdf, max_speed_kmh=max_speed_kmh)
 
 ``` python
 # indicator adds column _merge
-merged = user1_tdf.merge(user1_f_tdf, indicator=True, how='outer') # user1_tdf에 user1_f_tdf가 속하기 때문에 위 코드 실행가능.
-diff_df = merged[merged['_merge'] == 'left_only']
+merged = user1_tdf.merge(
+	user1_f_tdf, 
+	indicator=True, 
+	how='outer') 
+# user1_tdf에 user1_f_tdf가 
+# 속하기 때문에 실행
+
+diff_df = merged[
+	merged['_merge'] == 'left_only']
 diff_df
 ```
 
 ``` python
-map_f = unfiltered_tdf.plot_trajectory(zoom=14, weight=10, opacity=0.5, hex_color='black') #, tiles='Stamen Toner')
+map_f = unfiltered_tdf.plot_trajectory(
+	zoom=14, 
+	weight=10, 
+	opacity=0.5, 
+	hex_color='black') 
+	#, tiles='Stamen Toner')
 
-filtered_tdf.plot_trajectory(map_f=map_f, hex_color='red')
+filtered_tdf.plot_trajectory(
+	map_f=map_f, 
+	hex_color='red')
 ```
 ![](/attachments/Pasted_image_20230306155528.jpeg)
 
@@ -264,9 +335,12 @@ filtered_tdf.plot_trajectory(map_f=map_f, hex_color='red')
 #### 2) compress
 ``` python
 from skmob.preprocessing import compression
-
+```
 #$% spatial_radius_km=0.1 kilometers 안에 있는 gps 좌표들을 모두 merging!
-skmob.preprocessing.compression(tdf, spatial_radius_km=0.1)
+``` python
+skmob.preprocessing.compression(
+	tdf, 
+	spatial_radius_km=0.1)
 ```
 - 적용 후 parameter (dictionary)에 filter 내역 기록됨. (\=\-\= image by author)
 - 
@@ -282,8 +356,12 @@ skmob.preprocessing.compression(tdf, spatial_radius_km=0.1)
 
 #### stop detection
 ``` python
-user1_scf_tdf = detection.stay_locations(user1_cf_tdf, minutes_for_a_stop=20.0, 
-																patial_radius_km=0.2, leaving_time=True)
+user1_scf_tdf = detection\
+	.stay_locations(
+		user1_cf_tdf, 
+		minutes_for_a_stop=20.0,
+		patial_radius_km=0.2, 
+		leaving_time=True)
 user1_scf_tdf.head()
 ```
 - 최소 minutes for a stop 이상, spatial radius km * stop radius factor 내 머물러 있을 경우 stop이라고 인식 (\=\-\= image by author)
@@ -300,8 +378,13 @@ user1_scf_tdf.head()
 	- Arrival time
 	- Departure time
 ``` python
-map_f = user1_scf_tdf.plot_trajectory(max_points=1000, hex_color='blue', start_end_markers=False)
-user1_scf_tdf.plot_stops(map_f=map_f, hex_color='red')
+map_f = user1_scf_tdf.plot_trajectory(
+	max_points=1000, 
+	hex_color='blue', 
+	start_end_markers=False)
+user1_scf_tdf.plot_stops(
+	map_f=map_f, 
+	hex_color='red')
 ``` 
 ![](/attachments/Pasted_image_20230306163454.jpeg)
 
@@ -311,13 +394,22 @@ user1_scf_tdf.plot_stops(map_f=map_f, hex_color='red')
 ``` python
 dt1 = user1_scf_tdf.iloc[0].leaving_datetime
 dt2 = user1_scf_tdf.iloc[1].leaving_datetime
-
-# select all points between the first two stops
-user1_tid1_tdf = user1_tdf[(user1_tdf.datetime >= dt1) & (user1_tdf.datetime <= dt2)]
+```
+``` python
+# select all points between 
+# the first two stops
+user1_tid1_tdf = user1_tdf[
+	(user1_tdf.datetime >= dt1) & \
+	(user1_tdf.datetime <= dt2)]
 user1_tid1_tdf.head()
 
-user1_tid1_map = user1_tid1_tdf.plot_trajectory(zoom=12, weight=5, opacity=0.9,
-												hex_color='red', tiles='Stamen Toner', )
+user1_tid1_map = user1_tid1_tdf\
+	.plot_trajectory(
+		zoom=12, 
+		weight=5, 
+		opacity=0.9,
+		hex_color='red', 
+		tiles='Stamen Toner', )
 ```
 ![](/attachments/Pasted_image_20230306163746.jpeg)
 
@@ -326,13 +418,22 @@ user1_tid1_map = user1_tid1_tdf.plot_trajectory(zoom=12, weight=5, opacity=0.9,
 ``` python
 from skmob.utils.gislib import getDistanceByHaversine
 from skmob.measures.individual import distance_straight_line
+```
+``` python
+# take origin and destination
+#of the trip
+start_loc = user1_tid1_tdf\
+	.iloc[0]\[\['lat', 'lng'\]\]
+end_loc = user1_tid1_tdf\
+	.iloc[-1]\[\['lat', 'lng'\]\]
 
-# take origin and destination of the trip
-start_loc = user1_tid1_tdf.iloc[0][['lat', 'lng']]
-end_loc = user1_tid1_tdf.iloc[-1][['lat', 'lng']]
-
-# compute distance between origin and destination
-print("distance:", getDistanceByHaversine(end_loc, start_loc))
+# compute distance between 
+# origin and destination
+print(
+	"distance:", 
+	getDistanceByHaversine(
+	   end_loc, start_loc)
+)
 
 ### distance: 5.568109302866517
 
@@ -346,7 +447,10 @@ distance_straight_line(user1_tid1_tdf)
 - user1_scf_tdf으로 계산된 stops에 대해 clustering을 적용하는 것이기 때문에, user1_clscf_tdf 데이터의 개수는 user1_scf_tdf와 동일하다.
 ``` python
 from skmob.preprocessing import clustering
-user1_clscf_tdf = clustering.cluster(user1_scf_tdf, cluster_radius_km=0.1, min_samples=1)
+user1_clscf_tdf = clustering.cluster(
+	user1_scf_tdf, 
+	cluster_radius_km=0.1, 
+	min_samples=1)
 user1_clscf_tdf.head()
 ```
 - user1_clscf_tdf (\=\-\= image by author)
@@ -363,9 +467,13 @@ user1_clscf_tdf.head()
 
 #### Visualise clustered stops  
 ``` python
-map_f = user1_cf_tdf.plot_trajectory(max_points=1000, hex_color='blue', 
-																		 start_end_markers=False)
-user1_clscf_tdf.sort_values('cluster').query("cluster < 5").plot_stops(map_f=map_f)
+map_f = user1_cf_tdf.plot_trajectory(
+	max_points=1000, 
+	hex_color='blue', 
+	start_end_markers=False)
+user1_clscf_tdf.sort_values('cluster')\
+	.query("cluster < 5")\
+	.plot_stops(map_f=map_f)
 ```
 ![](/attachments/Pasted_image_20230307135740.jpeg)
 
@@ -373,16 +481,36 @@ user1_clscf_tdf.sort_values('cluster').query("cluster < 5").plot_stops(map_f=map
 
 ## examples
 ``` python
-sm_tess = tilers.tiler.get('squared', base_shape='San Mateo, USA', meters=5000)
-map_filtered_tdf = filtered_tdf.mapping(sm_tess, remove_na=True)
-map_compressed_tdf = compressed_tdf.mapping(sm_tess, remove_na=True)
-
-## tessellation부터 시각화할 때는 plot 패키지 자체에서 plot_gdf를 실행
-map_f = plot.plot_gdf(sm_tess, zoom=9, style_func_args={'color':'gray',
-																												'fillColor':'gray', 'opacity':0.2})
-map_f = map_filtered_tdf.plot_trajectory(map_f=map_f, max_points=None, weight=5,
-																				 hex_color='black', opacity=0.5)
-map_compressed_tdf.plot_trajectory(map_f=map_f, max_points=None, hex_color='red')
+sm_tess = tilers.tiler.get(
+	'squared', 
+	base_shape='San Mateo, USA', 
+	meters=5000)
+map_filtered_tdf = filtered_tdf.mapping(
+	sm_tess, 
+	remove_na=True)
+map_compressed_tdf = compressed_tdf.mapping(
+	sm_tess, 
+	remove_na=True)
+```
+tessellation부터 시각화할 때는 plot 패키지 자체에서 plot_gdf를 실행
+``` python
+map_f = plot.plot_gdf(
+	sm_tess, 
+	zoom=9, 
+	style_func_args={
+		'color':'gray',
+		'fillColor':'gray', 
+		'opacity':0.2})
+map_f = map_filtered_tdf.plot_trajectory(
+	map_f=map_f, 
+	max_points=None, 
+	weight=5,
+	hex_color='black', 
+	opacity=0.5)
+map_compressed_tdf.plot_trajectory(
+	map_f=map_f, 
+	max_points=None, 
+	hex_color='red')
 ```
 ![](/attachments/Pasted_image_20230307144702.jpeg)
 
