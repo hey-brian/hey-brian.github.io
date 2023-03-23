@@ -362,6 +362,16 @@ img {
 code {
     font-family: Consolas, 'Courier New', Courier, monospace;
     display: inline-block;
+    padding: 2px 2px 2px 2px;
+    vertical-align: middle;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 4px;
+}
+/*
+code {
+    font-family: Consolas, 'Courier New', Courier, monospace;
+    display: inline-block;
     overflow: auto !important;
     word-wrap: break-word !important;
     padding: 2px 2px 2px 2px;
@@ -370,6 +380,7 @@ code {
     border: 1px solid var(--secondary-border-color);
     border-radius: 4px;
 }
+*/
 
 .regular-sans code {
     padding: 20px;
@@ -389,14 +400,21 @@ code {
 pre code {
     font-family: Consolas, 'Courier New', Courier, monospace;
     display: inline-block;
+    padding: 15px 15px 15px 15px;
+    vertical-align: middle;
+    font-size: 1em;
+}
+/*
+pre code {
+    font-family: Consolas, 'Courier New', Courier, monospace;
+    display: inline-block;
     overflow: auto !important;
     word-wrap: break-word !important;
     padding: 15px 15px 15px 15px;
     vertical-align: middle;
-    font-size: 0.8em;
-    /* original: 1em */
-
+    font-size: 1em;
 }
+*/
 
 blockquote:before {
     display: none;
