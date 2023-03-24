@@ -69,7 +69,8 @@ result6 = df.query(query6)
 ## 2.1 AND
 '원본 DataFrame vs. number1이 10과 12범위 포함되면서 number2가 200과 300범위 포함되는 데이터'
 ``` python
-query7 = '(number1 in [10,12]) and (number2 in [200, 300])'
+query7 = '(number1 in [10,12]) and\
+	(number2 in [200, 300])'
 result7 = df.query(query7)
 ```
 ![](/attachments/Pasted_image_20221221073936.png)
@@ -77,7 +78,8 @@ result7 = df.query(query7)
 ## 2.2 OR
 원본 DataFrame vs. number1이 10과 12범위 포함되거나 number2가 200과 300범위 포함되는 데이터
 ``` python
-query8 = '(number1 in [10,12]) or (number2 in [200, 300])'
+query8 = '(number1 in [10,12]) or\
+	(number2 in [200, 300])'
 result8 = df.query(query8)
 ```
 ![](/attachments/Pasted_image_20221221074042.png)
@@ -85,7 +87,8 @@ result8 = df.query(query8)
 ## 2.3 NOT
 원본 DataFrame vs. number1이 10과 12범위 포함되지만 number2가 200과 300범위 포함 안 되는 데이터
 ``` python
-query8 = '(number1 in [10,12]) and not (number2 in [200, 300])'
+query8 = '(number1 in [10,12]) and\
+	not (number2 in [200, 300])'
 result8 = df.query(query8)
 ```
 ![](/attachments/Pasted_image_20221221074131.png)
@@ -123,7 +126,8 @@ result10 = df.query(query10)
 ``` python
 def cust_min(data):
     return min(data)
-query11 = f'number1 == @cust_min([10, 11, 12, 13])'
+query11 = f'number1 == \
+	@cust_min([10, 11, 12, 13])'
 result11 = df.query(query11)
 ```
 ![](/attachments/Pasted_image_20221221074554.png)
@@ -131,7 +135,8 @@ result11 = df.query(query11)
 ## 5.2 외부 함수, 외부 변수 참조
 
 ``` python
-query12 = f'number1 == @cust_min(@df.number1)'
+query12 = f'number1 == \
+	@cust_min(@df.number1)'
 result12 = df.query(query12)
 ```
 ![](/attachments/Pasted_image_20221221074726.png)
@@ -140,28 +145,32 @@ result12 = df.query(query12)
 ## 6.1 특정 문자 포함 여부 (대문자 소문자 구분)
 원본 DataFrame vs. name에 \'a\'가 포함된 데이터 (case의 default는 True 확인)
 ``` python
-result14 = df.query("name.str.contains('a')")
+result14 = df.query(
+	"name.str.contains('a')")
 ```
 ![](/attachments/Pasted_image_20221221074844.png)
 
 ## 6.2 특정 문자 포함 여부 (대문자 소문자 구분 안 함)
 원본 DataFrame vs. name에 \'a\'가 포함된 데이터 (case 구분 안 함)
 ``` python
-result15 = df.query("name.str.contains('a', case=False)")
+result15 = df.query(
+	"name.str.contains('a', case=False)")
 ```
 ![](/attachments/Pasted_image_20221221075002.png)
 
 ## 6.3 특정 문자로 시작
 
 ``` python
-result16 = df.query("name.str.startswith('a')")
+result16 = df.query(
+	"name.str.startswith('a')")
 ```
 ![](/attachments/Pasted_image_20221221075040.png)
 
 ## 6.4 특정 문자로 종료
 
 ``` python
-result17 = df.query("name.str.endswith('c')")
+result17 = df.query(
+	"name.str.endswith('c')")
 ```
 ![](/attachments/Pasted_image_20221221075115.png)
 
