@@ -1,8 +1,8 @@
 ---
-title: GAN summary
+title: Generative Adversarial Networks
 feed: show
 date : 2022-12-28
-tags : [📝️/🌲️, ML, DL]
+tags : [📝️/🌲️, DL]
 comments: true
 ---
 
