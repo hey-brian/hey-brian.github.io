@@ -1,5 +1,5 @@
 ---
-title: Support Vector Networks summary
+title: Support Vector Networks summary
 feed: hide
 date : 2023-03-27
 time : 07:30:47
