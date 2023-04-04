@@ -3,7 +3,7 @@ title: General Adversarial Nets summary
 feed: hide
 date : 2022-12-22
 time : 08:30:16
-tags : []
+tags : [summary]
 format: list
 comments: true
 ---
@@ -25,5 +25,6 @@ Goodfellow 등은 생성 모델과 판별 모델을 사용하여 새로운 이�
 - Karras, T., Aila, T., Laine, S., & Lehtinen, J. (2018). Progressive growing of GANs for improved quality, stability, and variation. arXiv preprint arXiv:1710.10196.
 - Zhu, J. Y., Park, T., Isola, P., & Efros, A. A. (2017). Unpaired image-to-image translation using cycle-consistent adversarial networks. In Proceedings of the IEEE international conference on computer vision (pp. 2223-2232).
 - Wang, T. C., Xu, M., Zhu, J. Y., Liu, K., Huang, S., & Metaxas, D. N. (2018). Video-to-video synthesis. In Advances in neural information processing systems (pp. 118-128).
+
 
 _끝_

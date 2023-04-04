@@ -3,7 +3,7 @@ title: Support Vector Networks summary
 feed: hide
 date : 2023-03-27
 time : 07:30:47
-tags : []
+tags : [summary]
 format: list
 comments: true
 ---
@@ -19,11 +19,12 @@ Corinna Cortes와 Vladimir Vapnik이 1995년에 발표한 논문으로, **SVM(Su
 - SVM은 일반적으로 데이터의 차원이 증가함에 따라 더 높은 계산 비용을 요구한다.
 - SVM은 데이터의 분포와 클래스의 균형을 고려해야 한다.
 
-# <관련된 논문>
+# <관련 논문>
 - Schölkopf, B., & Smola, A. J. (2002). Learning with Kernels: Support Vector Machines, Regularization, Optimization, and Beyond. MIT press.
 - Cristianini, N., & Shawe-Taylor, J. (2000). An introduction to support vector machines and other kernel-based learning methods. Cambridge university press.
 - Vapnik, V. (2013). The nature of statistical learning theory. Springer Science & Business Media.
 - Platt, J. C. (1999). Fast training of support vector machines using sequential minimal optimization. In Advances in kernel methods (pp. 185-208). MIT Press.
 - Bishop, C. M. (2006). Pattern recognition and machine learning. Springer.
+
 
 _끝_
