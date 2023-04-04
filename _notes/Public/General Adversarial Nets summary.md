@@ -19,7 +19,7 @@ Goodfellow 등은 생성 모델과 판별 모델을 사용하여 새로운 이�
 - GAN은 **진짜 이미지와 생성된 가짜 이미지를 잘 구분할 수 있는 능력**을 갖춘다.
 - GAN을 사용하면 **이미지 생성**, 영상 변환, 데이터 증강 등의 다양한 응용 분야에서 좋은 성능을 보여준다.
 
-# <관련된 논문>
+# <관련 논문>
 - Radford, A., Metz, L., & Chintala, S. (2016). Unsupervised representation learning with deep convolutional generative adversarial networks. arXiv preprint arXiv:1511.06434.
 - Isola, P., Zhu, J. Y., Zhou, T., & Efros, A. A. (2017). Image-to-image translation with conditional adversarial networks. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 1125-1134).
 - Karras, T., Aila, T., Laine, S., & Lehtinen, J. (2018). Progressive growing of GANs for improved quality, stability, and variation. arXiv preprint arXiv:1710.10196.

@@ -10,7 +10,7 @@ comments: true
 - SVM(Support Vector Machine)은 지도 학습 알고리즘 중 하나로, 주어진 데이터를 바탕으로 패턴을 분류하거나 예측
 - SVM은 데이터를 분류하기 위해 결정 경계(decision boundary)를 찾는 방식으로 동작
 ### 1.1 paper summary
-- [[Support-Vector Networks summary]]
+- [[Support Vector Networks summary]]
 
 ### 1.2 useful links
 - [Wikipedia](https://en.wikipedia.org/wiki/Support_vector_machine)
