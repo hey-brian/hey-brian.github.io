@@ -6,7 +6,7 @@ tags : [📝️/🌲️, ML]
 comments: true
 ---
 
-# 1. Introduction
+# 1. Introduction
 - SVM(Support Vector Machine)은 지도 학습 알고리즘 중 하나로, 주어진 데이터를 바탕으로 패턴을 분류하거나 예측
 - SVM은 데이터를 분류하기 위해 결정 경계(decision boundary)를 찾는 방식으로 동작
 ### 1.1 paper summary
@@ -38,6 +38,7 @@ comments: true
 
 # 4. Application
 - SVM은 다양한 분야에서 활용되고 있으며, 이미지 처리, 텍스트 분류, 바이오 인포매틱스 등에서 먼저 시도해볼 수 있는 알고리즘이다. 
+
 
 
 _끝_

@@ -6,8 +6,12 @@ tags : [📝️/🌲️, DL]
 comments: true
 ---
 
-# 1. Training
+# 1. Introduction
+### 1.1 Training
 - 데이터를 바탕으로 input -> model -> output 과정에서 model이 probability distribution을 학습할 수 있도록(=minimize a loss function) algorithm이 model's parameters 조정
+
+### 1.1 paper summary
+- [[General Adversarial Nets summary]]
 
 # 2. Generative models vs. discriminative models
 ### 2.1 discriminative models
@@ -58,5 +62,6 @@ comments: true
 	+ *D와 G 학습 결과*
 		* **학습이 진행될 수록(D와 G의 parameters가 update될수록), G는 진짜 데이터와 거의 비슷한 가짜 데이터를 생성하게 된다.**
 		* **그 결과, D는 진짜 데이터와 G가 생성한 가짜 데이터를 거의 구별하지 못 하게 된다.**
+
 
 _끝_
