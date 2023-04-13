@@ -10,7 +10,7 @@ comments: true
 
 ![](/attachments/Support_vector_networks_paper.jpeg)
 
-(\=\-\= image from [Support Vector Networks(1995)](https://link.springer.com/article/10.1023/A:1022627411411))
+(\### image from [Support Vector Networks(1995)](https://link.springer.com/article/10.1023/A:1022627411411))
 
 Corinna Cortes와 Vladimir Vapnik이 1995년에 발표한 논문으로, **SVM(Support Vector Machines)을 이용하여 두 개의 클래스 사이에서 가장 좋은 분리 초평면을 찾는 새로운 분류 접근 방법을 소개**했다.
 

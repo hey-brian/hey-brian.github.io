@@ -10,7 +10,7 @@ comments: true
 
 ![](/attachments/General_Adversarial_Nets_paper.jpeg)
 
-(\=\-\= image from [General Adversarial Nets(2014)](https://papers.nips.cc/paper/5423-generative-adversarial-nets))
+(\### image from [General Adversarial Nets(2014)](https://papers.nips.cc/paper/5423-generative-adversarial-nets))
 
 Goodfellow 등은 생성 모델과 판별 모델을 사용하여 새로운 이미지를 생성할 수 있는 General Adversarial Network(GAN)을 제안하고, 이를 사용하여 이미지 생성, 영상 변환 등의 다양한 응용 분야에서 좋은 결과를 보였다.
 

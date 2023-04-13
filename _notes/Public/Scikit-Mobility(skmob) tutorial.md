@@ -46,7 +46,7 @@ os.chdir('spatialindex-src-1.8.5')
 
 ![](/attachments/Pasted_image_20230306084333.png)
 
-(\=\-\= image by author)
+(\### image by author)
 
 
 #### Created from
@@ -74,13 +74,13 @@ tdf.plot_trajectory()
 ```
 ![](/attachments/Pasted_image_20230306084521.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ## Tessellation
 #### Format
 ![](/attachments/Pasted_image_20230306084716.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 - Tessellation: tile_id, geometry 등 (geopandas)
 ``` python
@@ -101,7 +101,7 @@ a_tdf = tdf[tdf['uid']==1]
 ``` 
 ![](/attachments/Pasted_image_20230306091231.png)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 a_tdf.plot_trajectory(
@@ -113,7 +113,7 @@ a_tdf.plot_trajectory(
 ``` 
 ![](/attachments/Pasted_image_20230306091323.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 # tdf contains trajectories from GeoLife
@@ -122,7 +122,7 @@ a_gdf.head()
 ```
 ![](/attachments/Pasted_image_20230306091411.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 NOTE: It accepts also geodataframe with list of polygons
 ``` python
@@ -133,7 +133,7 @@ a_tessellation = tilers.tiler.get(
 ``` 
 ![](/attachments/Pasted_image_20230306091518.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 map_f = plot.plot_gdf(
@@ -147,7 +147,7 @@ a_tdf.plot_trajectory(
 ```
 ![](/attachments/Pasted_image_20230306091614.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 #### TrajDataFrame을 Tessellation에 매핑
 a_tdf가 있는데 이걸 a_tessellation 어느 tile에 매핑되는지?
@@ -156,7 +156,7 @@ mapped_a_tdf = a_tdf.mapping(a_tessellation)
 ```
 ![](/attachments/Pasted_image_20230306091810.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 #### Select points within a tessellation
 ``` python
@@ -177,7 +177,7 @@ tdf.plot_trajectory(
 ```
 ![](/attachments/Pasted_image_20230306100742.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 #$% tdf를 tessellation에 매핑하여 결과 tdf(mapped_tdf)를 만든다.
 ``` python
@@ -196,7 +196,7 @@ mapped_tdf.plot_trajectory(
 ```
 ![](/attachments/Pasted_image_20230306101836.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ```python
 fdf = tdf.to_flowdataframe(
@@ -205,14 +205,14 @@ fdf = tdf.to_flowdataframe(
 ```
 ![](/attachments/Pasted_image_20230306113431.png)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 fdf.plot_flows(flow_exp=0., zoom=11)
 ```
 ![](/attachments/Pasted_image_20230306113448.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 map_f = plot.plot_gdf(
@@ -230,7 +230,7 @@ fdf.plot_flows(
 ```
 ![](/attachments/Pasted_image_20230306113704.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ## FlowDataFrame
 #### Format
@@ -240,7 +240,7 @@ fdf.plot_flows(
 
 ![](/attachments/Pasted_image_20230306084611.png)
 
-(\=\-\= image by author)	
+(\### image by author)	
 
 #### Created from
 - skmob.TrajDataFrame.from_file()
@@ -256,14 +256,14 @@ fdf.plot_tessellation(
 ```
 ![](/attachments/Pasted_image_20230306085124.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 fdf.plot_flows(flow_color='green')
 ```
 ![](/attachments/Pasted_image_20230306085201.png)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 tess_style = {
@@ -283,7 +283,7 @@ fdf[fdf['origin'] == '36061'].plot_flows(
 ```
 ![](/attachments/Pasted_image_20230306085314.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 # Processing mobility data
 ## Mobility data processing
@@ -300,7 +300,7 @@ user1_f_tdf = filtering.filter(
 - 
 ![](/attachments/Pasted_image_20230306154126.png)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 # indicator adds column _merge
@@ -330,7 +330,7 @@ filtered_tdf.plot_trajectory(
 ```
 ![](/attachments/Pasted_image_20230306155528.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 #### 2) compress
 ``` python
@@ -342,15 +342,15 @@ skmob.preprocessing.compression(
 	tdf, 
 	spatial_radius_km=0.1)
 ```
-- 적용 후 parameter (dictionary)에 filter 내역 기록됨. (\=\-\= image by author)
+- 적용 후 parameter (dictionary)에 filter 내역 기록됨. (\### image by author)
 - 
 ![](/attachments/Pasted_image_20230306160404.png)
 
-- 압축률을 확인해보면, 비슷한 좌표에서 측정된 GPS 좌표가 많았다는 것을 확인할 수 있다. (\=\-\= image by author)
+- 압축률을 확인해보면, 비슷한 좌표에서 측정된 GPS 좌표가 많았다는 것을 확인할 수 있다. (\### image by author)
 - 
 ![](/attachments/Pasted_image_20230306160537.jpeg)
 
-- 원본 데이터와 다르게 gps 좌표들이 제거되어 경로가 일부 변경된 것을 확인할 수 있다. (\=\-\= image by author)
+- 원본 데이터와 다르게 gps 좌표들이 제거되어 경로가 일부 변경된 것을 확인할 수 있다. (\### image by author)
 - 
 ![](/attachments/Pasted_image_20230306160948.jpeg)
 
@@ -364,10 +364,10 @@ user1_scf_tdf = detection\
 		leaving_time=True)
 user1_scf_tdf.head()
 ```
-- 최소 minutes for a stop 이상, spatial radius km * stop radius factor 내 머물러 있을 경우 stop이라고 인식 (\=\-\= image by author)
+- 최소 minutes for a stop 이상, spatial radius km * stop radius factor 내 머물러 있을 경우 stop이라고 인식 (\### image by author)
 - 
 ![](/attachments/Pasted_image_20230306161610.jpeg)
- - 적용 후 parameter (dictionary)에 filter 내역 기록됨. (\=\-\= image by author)
+ - 적용 후 parameter (dictionary)에 filter 내역 기록됨. (\### image by author)
  - 
 ![](/attachments/Pasted_image_20230306161843.png)
 
@@ -388,7 +388,7 @@ user1_scf_tdf.plot_stops(
 ``` 
 ![](/attachments/Pasted_image_20230306163454.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 #### Stops define trips
 ``` python
@@ -413,7 +413,7 @@ user1_tid1_map = user1_tid1_tdf\
 ```
 ![](/attachments/Pasted_image_20230306163746.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ``` python
 from skmob.utils.gislib import getDistanceByHaversine
@@ -453,15 +453,15 @@ user1_clscf_tdf = clustering.cluster(
 	min_samples=1)
 user1_clscf_tdf.head()
 ```
-- user1_clscf_tdf (\=\-\= image by author)
+- user1_clscf_tdf (\### image by author)
 
 ![](/attachments/Pasted_image_20230306161610.jpeg)
 
-- user1_clscf_tdf (\=\-\= image by author)
+- user1_clscf_tdf (\### image by author)
 
 ![](/attachments/Pasted_image_20230307134757.jpeg)
 
-- parameters (\=\-\= image by author)
+- parameters (\### image by author)
 
 ![](/attachments/Pasted_image_20230307135259.png)
 
@@ -477,7 +477,7 @@ user1_clscf_tdf.sort_values('cluster')\
 ```
 ![](/attachments/Pasted_image_20230307135740.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 ## examples
 ``` python
@@ -514,6 +514,6 @@ map_compressed_tdf.plot_trajectory(
 ```
 ![](/attachments/Pasted_image_20230307144702.jpeg)
 
-(\=\-\= image by author)
+(\### image by author)
 
 _끝_
