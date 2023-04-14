@@ -26,7 +26,7 @@ comments: true
 
 ### 1.2 🎓Paper summary
 - [[Nearest neighbor pattern classification summary]]
-- [[An Important Contribution to Nonparametric Discriminant Analysis and Density Estimation summary_202303270743]]
+- [[An Important Contribution to Nonparametric Discriminant Analysis and Density Estimation summary]]
 
 ### 1.3 🔗Useful links
 - [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
