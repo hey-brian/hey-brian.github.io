@@ -20,11 +20,6 @@ comments: true
 - 분류 성능은 이웃의 수(k)와 거리 측정 방법에 따라 달라진다.
 - 특징 공간에서 데이터 포인트의 분포가 균등하게 나타나지 않는 경우, 데이터의 변환 또는 거리 측정 방법의 수정이 필요하다.
 
-관련 주제나 미래 연구 방향으로는 다음과 같은 것들이 있습니다:
-- 최근접 이웃 알고리즘의 계산 비용을 줄이는 방법 연구
-- 거리 측정 방법의 개선 및 적용
-- 최근접 이웃 알고리즘의 확장 및 응용
-
 # Related papers
 - Aha, D. W., Kibler, D., & Albert, M. K. (1991). Instance-based learning algorithms. Machine learning, 6(1), 37-66.
 - Altman, N. S. (1992). An introduction to kernel and nearest-neighbor nonparametric regression. The American Statistician, 46(3), 175-185.
