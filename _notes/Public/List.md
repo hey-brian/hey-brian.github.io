@@ -6,6 +6,17 @@ permalink: /list
 ---
 
 ## Mathematics
+### [[Bootstrap]] #statistics
+---
+- [Problems in Plane Sampling(1949)](https://projecteuclid.org/euclid.aoms/1177729989) #ProjectEuclid _by_ Quenouille, 
+	- 🗂[[Problems in Plane Sampling summary]]
+- [Notes on Bias Estimation(1958)](https://www.jstor.org/stable/2332914?seq=1) #JSTOR _by_ Quenouille,  
+	- 🗂[[Notes on Bias Estimation summary]]
+- [Bias and Confidence in Not-quite Large Samples(1958)](https://www.jstor.org/stable/2332914?seq=1) #JSTOR _by_ Tukey, 
+	- 🗂[[Bias and Confidence in Not-quite Large Samples summary]]
+- [Bootstrap Methods: Another Look at the Jackknife(1979)](https://projecteuclid.org/euclid.aos/1176344552) #ProjectEuclid _by_ Efron, 
+	- 🗂[[Bootstrap Methods_Another Look at the Jackknife summary]]
+
 --- 
 - 
 
