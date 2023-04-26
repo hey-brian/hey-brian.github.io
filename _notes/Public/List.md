@@ -17,12 +17,11 @@ permalink: /list
 - [Bootstrap Methods: Another Look at the Jackknife(1979)](https://projecteuclid.org/euclid.aos/1176344552) #ProjectEuclid _by_ Efron, 
 	- 🗂[[Bootstrap Methods_Another Look at the Jackknife summary]]
 
---- 
-- 
-
 ## Modeling
+### [[Bagging]] #ensemble
 --- 
-- 
+- [Bagging Predictors(1996)](https://link.springer.com/article/10.1023/A:1018054314350) #Springer _by_ Breiman,
+	- 🗂[[Bagging Predictors summary]]
 
 ## Machine Learning
 ### [[k-Nearest Neighbors]] #supervised
