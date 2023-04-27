@@ -10,7 +10,7 @@ comments: true
 
 # 1. Introduction
 ### 1.1 ✂️TL;DR
-Bagging은 Bootstrap Aggregating의 줄임말로, 각각의 [[Bootstrap]](중복을 허용) sample(데이터)들을 모아서 (Aggregating) 여러 개의 모델을 만들고 예측하는 앙상블 방법
+- Bagging은 Bootstrap Aggregating의 줄임말로, 각각의 [[Bootstrap]] (중복을 허용) sample(데이터)들을 모아서 (Aggregating) 여러 개의 모델을 만들고 예측하는 앙상블 방법
 
 ### 1.2 🎓Paper summary
 - [[Bagging Predictors summary]]
