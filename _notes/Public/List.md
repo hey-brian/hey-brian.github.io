@@ -23,6 +23,13 @@ permalink: /list
 - [Bagging Predictors(1996)](https://link.springer.com/article/10.1023/A:1018054314350) #Springer _by_ Breiman,
 	- 🗂[[Bagging Predictors summary]]
 
+### [[AdaBoost]] ([[Boosting]]) #ensemble
+---
+- [A Decision-Theoretic Generalization of on-Line Learning and an Application to Boosting(1997—published as abstract in 1995)](https://link.springer.com/chapter/10.1007/3-540-59119-2_166) #Springer _by_ Freund and Schapire,  
+	- 🗂[[A Decision-Theoretic Generalization of on-Line Learning and an Application to Boosting summary]]
+- [Experiments with a New Boosting Algorithm(1996)](https://citeseerx.ist.psu.edu/search_result?query=Experiments+with+a+New+Boosting+Algorithm+%281996%29%2C+Freund+and+Schapire&pdf=true) #CiteSeerX _by_ Freund and Schapire, 
+	- 🗂[[Experiments with a New Boosting Algorithm summary]]
+
 ## Machine Learning
 ### [[k-Nearest Neighbors]] #supervised
 ---
