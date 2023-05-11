@@ -38,6 +38,11 @@ permalink: /list
 - [E. Fix and J.L. Hodges(1951): An Important Contribution to Nonparametric Discriminant Analysis and Density Estimation(1989)](https://www.jstor.org/stable/1403796?seq=1) #JSTOR _by_ Silverman and Jones, 
 	- 🗂[[An Important Contribution to Nonparametric Discriminant Analysis and Density Estimation summary]]
 
+### [[Random Forest]] #supervised
+---
+- [Random Forests(2001)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.125.5395) #CiteSeerX _by_ Breiman and Schapire, 
+	- 🗂[[Random Forests summary]]
+
 ### [[Support Vector Machine]] #supervised
 ---
 - [Support Vector Networks(1995)](https://link.springer.com/article/10.1023/A:1022627411411) #Springer _by_ Cortes and Vapnik, 
