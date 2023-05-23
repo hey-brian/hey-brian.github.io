@@ -31,6 +31,11 @@ permalink: /list
 	- 🗂[[Experiments with a New Boosting Algorithm summary]]
 
 ## Machine Learning
+### [[Decision Trees]] #supervised
+---
+- [Induction of Decision Trees(1986)](https://link.springer.com/article/10.1007/BF00116251) #Springer _by_ Quinlan, 
+	- 🗂[[Induction of Decision Trees summary]]
+
 ### [[k-Nearest Neighbors]] #supervised
 ---
 - [Nearest neighbor pattern classification(1967)](https://ieeexplore.ieee.org/abstract/document/1053964) #IEEE _by_ Cover and Hart, 
