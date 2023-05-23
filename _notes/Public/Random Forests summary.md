@@ -11,7 +11,7 @@ comments: true
 
 ![](/attachments/Screenshot_2023-03-29_at_71456_AM_watermarked.jpeg)
 
-(\### image from  [Random Forests](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.125.5395))
+(\### image from [Random Forests(2001)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.125.5395))
 
 Breiman이 쓴 "Random Forests" 논문은 결정 트리 모델의 과적합 문제를 해결하기 위해, 랜덤한 특성 선택과 부트스트래핑을 사용하는 앙상블 방법(분산성과 안정성 강화)인 랜덤 포레스트의 개념을 제안한다.
 
