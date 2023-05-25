@@ -17,6 +17,16 @@ permalink: /list
 - [Bootstrap Methods: Another Look at the Jackknife(1979)](https://projecteuclid.org/euclid.aos/1176344552) #ProjectEuclid _by_ Efron, 
 	- 🗂[[Bootstrap Methods_Another Look at the Jackknife summary]]
 
+### Optimization
+---
+#### [[Gradient Descent]]
+
+#### [[Stochastic Gradient Descent]]
+- [A Stochastic Approximation Method(1951)](https://projecteuclid.org/euclid.aoms/1177729586) #ProjectEuclid _by_ Robbins and Monro, 
+	- 🗂[[A Stochastic Approximation Method summary]]
+- [Stochastic Estimation of the Maximum of a Regression Function(1952)](https://projecteuclid.org/euclid.aoms/1177729392) #ProjectEuclid _by_ Kiefer and Wolfowitz, 
+	- 🗂[[Stochastic Estimation of the Maximum of a Regression Function summary]]
+
 ## Modeling
 ### [[Bagging]] #ensemble
 --- 
