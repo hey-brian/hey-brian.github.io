@@ -27,6 +27,10 @@ permalink: /list
 - [Stochastic Estimation of the Maximum of a Regression Function(1952)](https://projecteuclid.org/euclid.aoms/1177729392) #ProjectEuclid _by_ Kiefer and Wolfowitz, 
 	- 🗂[[Stochastic Estimation of the Maximum of a Regression Function summary]]
 
+#### [[Expectation Maximization]]
+- [Maximum likelihood from incomplete data via the EM algorithm(1977)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.133.4884) #CiteSeerX _by_ Dempster, Laird, and Rubin, 
+	- 🗂[[Maximum likelihood from incomplete data via the EM algorithm summary]]
+
 ## Modeling
 ### [[Bagging]] #ensemble
 --- 
