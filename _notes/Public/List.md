@@ -44,6 +44,13 @@ permalink: /list
 - [Experiments with a New Boosting Algorithm(1996)](https://citeseerx.ist.psu.edu/search_result?query=Experiments+with+a+New+Boosting+Algorithm+%281996%29%2C+Freund+and+Schapire&pdf=true) #CiteSeerX _by_ Freund and Schapire, 
 	- 🗂[[Experiments with a New Boosting Algorithm summary]]
 
+### [[Gradient Boosting]] #ensemble 
+---
+- [Greedy function approximation: A gradient boosting machine(2001)](https://projecteuclid.org/euclid.aos/1013203451) #ProjectEuclid _by_ Friedman, 
+	- 🗂[[Greedy function approximation_A gradient boosting machine summary]]
+- [XGBoost: A Scalable Tree Boosting System(2016)](https://arxiv.org/abs/1603.02754) #arXiv _by_ Chen and Guestrin, 
+	- 🗂[[XGBoost_A Scalable Tree Boosting System summary]]
+
 ## Machine Learning
 ### [[Decision Trees]] #supervised
 ---
