@@ -1,5 +1,5 @@
 ---
-title: Greedy function approximation_A gradient boosting machine summary
+title: XGBoost_A Scalable Tree Boosting System summary
 feed: hide
 date : 2023-03-29
 time : 07:08:53
