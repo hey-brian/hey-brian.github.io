@@ -17,6 +17,14 @@ permalink: /list
 - [Bootstrap Methods: Another Look at the Jackknife(1979)](https://projecteuclid.org/euclid.aos/1176344552) #ProjectEuclid _by_ Efron, 
 	- 🗂[[Bootstrap Methods_Another Look at the Jackknife summary]]
 
+### [[Lasso]] #statistics #regression
+---
+- [Linear Inversion of Band-Limited Reflection Seismograms(1986)](https://epubs.siam.org/doi/10.1137/0907087) #epubs _by_ Santosa and Symes, 
+	- 🗂[[Linear Inversion of Band-Limited Reflection Seismograms summary]]
+- [Regression Shrinkage and Selection Via the Lasso(1994)](https://www.jstor.org/stable/2346178) #JSTOR _by_ Tibshirani, 
+	- 🗂[[Regression Shrinkage and Selection Via the Lasso summary]]
+
+
 ### Optimization
 ---
 #### [[Gradient Descent]]
