@@ -24,18 +24,22 @@ permalink: /list
 - [Regression Shrinkage and Selection Via the Lasso(1994)](https://www.jstor.org/stable/2346178) #JSTOR _by_ Tibshirani, 
 	- 🗂[[Regression Shrinkage and Selection Via the Lasso summary]]
 
-
-### Optimization
+### [[Elastic Net]] #statistics #regression
 ---
-#### [[Gradient Descent]]
+- [Regularization and variable selection via the Elastic Net(2005)](https://www.jstor.org/stable/3647580) #JSTOR _by_ Zou and Hastie, 
+	- 🗂[[Regularization and variable selection via the Elastic Net summary]]
 
-#### [[Stochastic Gradient Descent]]
+### [[Gradient Descent]] #optimization
+
+### [[Stochastic Gradient Descent]] #optimization
+---
 - [A Stochastic Approximation Method(1951)](https://projecteuclid.org/euclid.aoms/1177729586) #ProjectEuclid _by_ Robbins and Monro, 
 	- 🗂[[A Stochastic Approximation Method summary]]
 - [Stochastic Estimation of the Maximum of a Regression Function(1952)](https://projecteuclid.org/euclid.aoms/1177729392) #ProjectEuclid _by_ Kiefer and Wolfowitz, 
 	- 🗂[[Stochastic Estimation of the Maximum of a Regression Function summary]]
 
-#### [[Expectation Maximization]]
+### [[Expectation Maximization]] #optimization 
+---
 - [Maximum likelihood from incomplete data via the EM algorithm(1977)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.133.4884) #CiteSeerX _by_ Dempster, Laird, and Rubin, 
 	- 🗂[[Maximum likelihood from incomplete data via the EM algorithm summary]]
 
