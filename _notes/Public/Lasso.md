@@ -22,6 +22,10 @@ comments: true
 
 > Lasso는 L1 규제를 사용하여 모델의 가중치를 축소하는 방식으로 작동하며, 이를 통해 Lasso는 중요한 변수를 선택하고 불필요한 변수의 영향을 줄인다.
 
+![](/attachments/Pasted_image_20230610232441_watermarked.jpeg)
+
+(\### image from [Elastic Net talk by Hui Zou and Trevor Hastie](https://hastie.su.domains/TALKS/enet_talk.pdf))
+
 ### 2.2 ⛓️Steps 
 
 ![](/attachments/Pasted_image_20230607081458_watermarked.jpeg)
@@ -44,6 +48,10 @@ comments: true
 - 모델 복잡성 제한: Lasso는 모델의 가중치를 제한하므로 복잡한 모델에 적합하지 않을 수 있습니다.
 - 변수 선택의 한계: Lasso는 선택한 변수 외에는 정보를 제공하지 않으며, 모든 변수가 중요하지 않을 수 있습니다.
 - 변수 상관 관계 처리: Lasso는 변수 간의 상관 관계를 고려하지 않으므로 상관 관계가 있는 변수를 제대로 처리하지 못할 수 있습니다.
+
+![](/attachments/Pasted_image_20230610232508_watermarked.jpeg)
+
+(\### image from [Elastic Net talk by Hui Zou and Trevor Hastie](https://hastie.su.domains/TALKS/enet_talk.pdf))
 
 # 4. Application
 - 특성 선택 (Feature Selection)
