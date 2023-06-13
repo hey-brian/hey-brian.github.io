@@ -43,6 +43,11 @@ permalink: /list
 - [Maximum likelihood from incomplete data via the EM algorithm(1977)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.133.4884) #CiteSeerX _by_ Dempster, Laird, and Rubin, 
 	- 🗂[[Maximum likelihood from incomplete data via the EM algorithm summary]]
 
+### [[Adam]] #optimization 
+---
+- [Adam: A Method for Stochastic Optimization(2015)](https://arxiv.org/abs/1412.6980) #arXiv _by_ Kingma and Ba, 
+	- 🗂[[Adam_A Method for Stochastic Optimization summary]]
+
 ## Modeling
 ### [[Bagging]] #ensemble
 --- 
