@@ -11,6 +11,8 @@ comments: true
 
 ![](/attachments/Screenshot_2023-03-28_at_105401_PM_watermarked.jpeg)
 
+(\### image from [Bagging Predictors(1996)](https://link.springer.com/article/10.1023/A:1018054314350))
+
 "Bagging Predictors" 논문은 Breiman에 의해 쓰여진 앙상블 학습에 관한 논문으로, 다수결 방식으로 각각 다른 샘플링 데이터(부트스트랩 방법을 이용하여 표본을 반복 추출)를 이용하여 분류기 학습을 반복하면 일반화 성능을 향상시킬 수 있다는 것을 보여준다. (분산을 줄이고 overfitting을 방지할 수 있음을 실험적으로 입증하였다.) 
 
 # Key Insights and Lessons Learned
