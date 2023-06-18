@@ -48,6 +48,11 @@ permalink: /list
 - [Adam: A Method for Stochastic Optimization(2015)](https://arxiv.org/abs/1412.6980) #arXiv _by_ Kingma and Ba, 
 	- 🗂[[Adam_A Method for Stochastic Optimization summary]]
 
+### [[Autograd]]
+- [Autograd: Effortless Gratients in Numpy(2015)](https://indico.ijclab.in2p3.fr/event/2914/contributions/6483/subcontributions/180/attachments/6060/7185/automl-short.pdf)  #ICML _by_ Dougal Maclaurin, David Duvenaud, Ryan P. Adams 
+	- 🗂[[Autograd_Effortless Gratients in Numpy summary]]
+	- [Github](https://github.com/HIPS/autograd)
+
 ## Modeling
 ### [[Bagging]] #ensemble
 --- 
