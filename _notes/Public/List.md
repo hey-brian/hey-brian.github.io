@@ -83,6 +83,11 @@ permalink: /list
 	- 📝[[XGBoost_A Scalable Tree Boosting System summary]]
 
 ## Machine Learning
+### [[Perceptron]]
+---
+- [The Perceptron: A Probabilistic Model for Information Storage and Organization in The Brain(1958)](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.588.3775) #CiteSeerX _by_ Rosenblatt, 
+	- 📝[[The Perceptron_A Probabilistic Model for Information Storage and Organization in The Brain summary]]
+
 ### [[Decision Trees]] #supervised
 ---
 - [Induction of Decision Trees(1986)](https://link.springer.com/article/10.1007/BF00116251) #Springer _by_ Quinlan, 
