@@ -88,6 +88,11 @@ permalink: /list
 - [The Perceptron: A Probabilistic Model for Information Storage and Organization in The Brain(1958)](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.588.3775) #CiteSeerX _by_ Rosenblatt, 
 	- 📝[[The Perceptron_A Probabilistic Model for Information Storage and Organization in The Brain summary]]
 
+### [[Dropout]]
+---
+- [Dropout: A Simple Way to Prevent Neural Networks from Overfitting(2014)](http://jmlr.org/papers/v15/srivastava14a.html) #JMLR _by_ Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov, 
+	- 📝[[Dropout_A Simple Way to Prevent Neural Networks from Overfitting summary]]
+
 ### [[Decision Trees]] #supervised
 ---
 - [Induction of Decision Trees(1986)](https://link.springer.com/article/10.1007/BF00116251) #Springer _by_ Quinlan, 
