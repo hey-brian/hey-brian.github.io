@@ -177,21 +177,15 @@ result17 = df.query(
 
 # 7. Null/Null 제외 조회
 
-``` python
-input_data = {"name": ["Ab", "ad", "Bc", "CD"], 
-        "number1": [10, 13, 12, 11],
-        "number2": [100,300,None,100]}
-
-df = pd.DataFrame(input_data)
-display(df)
-```
 ![](/attachments/Pasted_image_20230626214240_watermarked.jpeg)
 
 ## 7.1 Null 조회
 ``` python
 query18 = f'number2.isnull()'
 result18 = df.query(query18)
-print("원본 DataFrame vs. number2 빈값 조회")
+print(
+  "원본 vs. number2 빈값 조회"
+)
 display_side_by_side(df, result18)
 ```
 ![](/attachments/Pasted_image_20230626214351_watermarked.jpeg)
@@ -200,7 +194,9 @@ display_side_by_side(df, result18)
 ``` python
 query19 = f'number2.notnull()'
 result19 = df.query(query19)
-print("원본 DataFrame vs. number2 빈값 제외 조회")
+print(
+  "원본 vs. number2 빈값 제외 조회"
+)
 display_side_by_side(df, result19)
 ```
 ![](/attachments/Pasted_image_20230626214548_watermarked.jpeg)
