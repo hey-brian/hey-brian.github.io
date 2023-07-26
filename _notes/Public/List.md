@@ -82,16 +82,16 @@ permalink: /list
 - [XGBoost: A Scalable Tree Boosting System(2016)](https://arxiv.org/abs/1603.02754) #arXiv _by_ Chen and Guestrin, 
 	- 📝[[XGBoost_A Scalable Tree Boosting System summary]]
 
+### [[Dropout]]
+---
+- [Dropout: A Simple Way to Prevent Neural Networks from Overfitting(2014)](http://jmlr.org/papers/v15/srivastava14a.html) #JMLR _by_ Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov, 
+	- 📝[[Dropout_A Simple Way to Prevent Neural Networks from Overfitting summary]]
+
 ## Machine Learning
 ### [[Perceptron]]
 ---
 - [The Perceptron: A Probabilistic Model for Information Storage and Organization in The Brain(1958)](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.588.3775) #CiteSeerX _by_ Rosenblatt, 
 	- 📝[[The Perceptron_A Probabilistic Model for Information Storage and Organization in The Brain summary]]
-
-### [[Dropout]]
----
-- [Dropout: A Simple Way to Prevent Neural Networks from Overfitting(2014)](http://jmlr.org/papers/v15/srivastava14a.html) #JMLR _by_ Srivastava, Hinton, Krizhevsky, Sutskever, and Salakhutdinov, 
-	- 📝[[Dropout_A Simple Way to Prevent Neural Networks from Overfitting summary]]
 
 ### [[Decision Trees]] #supervised
 ---
@@ -104,6 +104,11 @@ permalink: /list
 	- 📝[[Nearest neighbor pattern classification summary]]
 - [E. Fix and J.L. Hodges(1951): An Important Contribution to Nonparametric Discriminant Analysis and Density Estimation(1989)](https://www.jstor.org/stable/1403796?seq=1) #JSTOR _by_ Silverman and Jones, 
 	- 📝[[An Important Contribution to Nonparametric Discriminant Analysis and Density Estimation summary]]
+
+### [[Latent Dirichlet Allocation]] #NLP
+---
+- [Latent Dirichlet Allocation(2003)](http://jmlr.csail.mit.edu/papers/v3/blei03a.html) #JMLR _by_ Blei, Ng, and Jordan, 
+	- 📝[[Latent Dirichlet Allocation summary]]
 
 ### [[Random Forest]] #supervised
 ---
