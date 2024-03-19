@@ -1,12 +1,13 @@
 ---
 title: ooo
 feed: show
-date : 2022-12-22
-time : 08:30:16
-tags : []
+date: 2022-12-22
+time: 08:30:16
+tags: 
 permalink: /credits
 format: list
 comments: true
+imageNameKey:
 ---
 
 # 제목
