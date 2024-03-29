@@ -126,11 +126,15 @@ permalink: /list
 	- 📝[[General Adversarial Nets summary]]
 
 ## Programming
-### Python
+### #Python
 ---
 - 📝[[pandas(판다스) 쿼리(query) 조회]]
 
-### Visualization
+### #SQL
+---
+- 📝[[Oracle SQL procedure에서 random characters(무작위 문자) 사용]]
+
+### #Visualization
 ---
 - 📝[[Scikit-Mobility(skmob) tutorial]]
 

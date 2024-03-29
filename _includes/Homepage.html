@@ -11,5 +11,18 @@
         <p align="right">I will never meet.</p> 
         <p align="right">Everything's gonna be okay.</p>
         </h3> 
+        <a href="{{'/notes' | relative_url}}">
+            <h3 class="home-sub-title arrow-link">
+                    <span class="text"> Latest Working Notes</span>
+                    <span class="arrow">See All &rarr;</span>
+            </h3>
+        </a>
+        <div class="home-wrapper">  
+                {% assign notes = site.notes | where: 'feed', 'show' | sort: 'date' | reverse %}
+                {% for note in notes limit: 5 %}
+                <div class="homelist-feed"> <a href="{{ note.url }}">{{ note.title }}</a></div>
+                {% endfor %}
+        </div>
 </div> </div>
+
 
