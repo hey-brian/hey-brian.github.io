@@ -12,10 +12,10 @@
         <p align="right">Everything's gonna be okay.</p>
         </h3> 
         <a href="{{'/notes' | relative_url}}">
-            <h3 class="home-sub-title arrow-link">
-                    <span class="text"> Latest Working Notes</span>
+            <h2 class="home-sub-title arrow-link">
+                    <span class="text"><b>Latest Feeds</b></span>
                     <span class="arrow">See All &rarr;</span>
-            </h3>
+            </h2>
         </a>
         <div class="home-wrapper">  
                 {% assign notes = site.notes | where: 'feed', 'show' | sort: 'date' | reverse %}
