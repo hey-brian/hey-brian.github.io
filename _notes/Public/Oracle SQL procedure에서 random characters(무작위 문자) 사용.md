@@ -29,6 +29,7 @@ CREATE TABLE random_strings_table (
 	- 'A' - 대소문자 알파벳 문자
 	- 'X' - 대소문자 알파벳 및 숫자 문자
 - 2) 문자열의 길이는 두 번째 인자로 지정할 수 있으며, 길이는 고정된 값이 아닌 랜덤한 값을 사용할 수도 있다.
+
 ``` sql
 SELECT DBMS_RANDOM.STRING('X', 15) FROM DUAL; 
 -- 15자리 대소문자 알파벳 및 숫자를 조합한 랜덤 문자열 생성 
@@ -38,6 +39,7 @@ SELECT DBMS_RANDOM.STRING('X', DBMS_RANDOM.VALUE(10, 20)) FROM DUAL;
 ```
 
 ### 앞에서 생성한 테이블에 Random characters를 삽입
+
 ``` sql
 CREATE OR REPLACE PROCEDURE insert_random_string IS
 	-- 변수를 선언
