@@ -1,5 +1,5 @@
 ---
-title: Full Steam Ahead_The 2024 MAD Landscape 정리
+title: Full Steam Ahead-The 2024 MAD Landscape 정리
 feed: show
 date: 2024-04-10
 time: 00:36:16
