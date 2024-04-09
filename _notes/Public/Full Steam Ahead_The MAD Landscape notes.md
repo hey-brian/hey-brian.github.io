@@ -1,11 +1,9 @@
 ---
-title: Full Steam Ahead-The 2024 MAD Landscape 정리
+title: Full Steam Ahead_The MAD Landscape notes
 feed: show
 date: 2024-04-10
 time: 00:36:16
 tags: 
-permalink: 
-format: 
 comments: true
 imageNameKey:
 ---
