@@ -1,8 +1,8 @@
 ---
 title: ooo
 feed: show
-date: 2022-12-22
-time: 08:30:16
+date: {{date}} 
+time: {{time:HH:mm:ss}}
 tags: 
 permalink: /credits
 format: list
