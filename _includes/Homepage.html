@@ -1,28 +1,37 @@
 <div class="home-intro">
     <h5 class="meta-title">Hello, I'm Brian S. ⸻</h5>
-    <div class="jumbo">This stuff works. Festina lente.</div>
+    <div class="jumbo">Fluctuat nec mergitur</div>
     <!-- <div class="jumbo">{{site.heading}} </div> -->
-    <div class="home-sub-text"> <h3>
-        <p>&nbsp;</p>
-        <p align='center'><img src='/attachments/main_image.jpeg'></p>        
-        <!-- <a href="{{'/post/features' | relative_url}}"> features </a> and <a href="{{'/post/how-to' | relative_url}}"> how to</a>. -->
-        <p>&nbsp;</p>
-        <p align="right">You, random person<p> 
-        <p align="right">I will never meet.</p> 
-        <p align="right">Everything's gonna be okay.</p>
-        </h3> 
+    <div class="home-sub-text">
         <a href="{{'/notes' | relative_url}}">
             <h2 class="home-sub-title arrow-link">
-                    <span class="text"><b>Latest Feeds</b></span>
-                    <span class="arrow">See All &rarr;</span>
+                <span class="text"><b>Latest Feeds</b></span>
+                <span class="arrow">See All &rarr;</span>
             </h2>
         </a>
-        <div class="home-wrapper">  
-                {% assign notes = site.notes | where: 'feed', 'show' | sort: 'date' | reverse %}
-                {% for note in notes limit: 5 %}
-                <div class="homelist-feed"> <a href="{{ note.url }}">{{ note.title }}</a></div>
-                {% endfor %}
+        <div class="home-wrapper">
+            {% assign notes = site.notes | where: 'feed', 'show' | sort: 'date'
+            | reverse %} {% for note in notes limit: 5 %}
+            <div class="homelist-feed">
+                <a href="{{ note.url }}">{{ note.title }}</a>
+            </div>
+            {% endfor %}
         </div>
-</div> </div>
-
-
+        <h3>
+            <p>&nbsp;</p>
+            <p align="center"><img src="/attachments/main_image.jpeg" /></p>
+            <!-- <a href="{{'/post/features' | relative_url}}"> features </a> and <a href="{{'/post/how-to' | relative_url}}"> how to</a>. -->
+            <p align="right">
+                SMACS 0723, Webb’s First Deep Field (<a
+                    href="https://www.nasa.gov/image-article/nasas-webb-delivers-deepest-infrared-image-of-universe-yet/"
+                    target="_blank"
+                    >NASA</a
+                >)
+            </p>
+            <p>
+                <!-- <p align="right">You, random person I will never meet.</p> -->
+                <!-- <p align="right">Everything's gonna be okay.</p> -->
+            </p>
+        </h3>
+    </div>
+</div>
